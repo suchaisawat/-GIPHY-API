@@ -67,10 +67,14 @@
       event.preventDefault();
       // This line grabs the input from the textbox
       var animalInput = $("#animal-input").val().trim();
+       if ($.trim($("#animal-input").val()) === "") {
+           alert("you did not enter any text");
+       }
+      else {
       // Adding the movie from the textbox to our array
       animals.push(animalInput);
       // Calling renderButtons which handles the processing of our movie array
-      renderButtons();
+      renderButtons()};
   });
   $(document).on("click", ".animal", alertAnimalName, generateGif);
   renderButtons();
