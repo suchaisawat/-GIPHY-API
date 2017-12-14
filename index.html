@@ -11,44 +11,31 @@
 <body>
     <div class="container">
         <div class="row">
-            <h1>Add your favorite animals</h1>
+           <div class="jumbotron">
+                <h1 class="panel-title">Animal Search</h1>
+            </div>
         </div>
         <div class="row">
+               <div class="col-md-8">
             <div id="buttons-view"></div>
         </div>
-        <div class="row">
-            <div class="container">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <span class="glyphicon glyphicon-star yelloStar"></span>
-                        <label class="float-left">name</label>
-                    </div>
-                    <div id = animalGif class="panel-body">
-                        Giphy file will be in here
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <span class="glyphicon glyphicon-star yelloStar"></span>
-                        <label class="float-left">  Add new Animal</label>
-                    </div>
-                    <div class="panel-body">
-                        <form id="animal-form">
-                            <label for="animal-input">New animal </label><span>    </span>
-                            <input type="text" id="animal-input"><br>
-                            <!-- Button triggers new movie to be added -->
-                            <button id="submit" class="btn btn-primary" type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div>
+         <div class="col-md-4">
+                <form id="animal-form">
+                    <label for="animal-input">Add animal</label>
+                    <input type="text" id="animal-input"><br>
+                    <input id="add-animal" type="submit" value="Submit">
+                </form>
             </div>
         </div>
-        <!-- Rendered Buttons will get Dumped Here  -->
+        <div class="container">
+            <div class="col-md-8">
+                    <div id="animalGif"></div>
+            </div>
+           
+        </div>
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
-<!--https://codepen.io/atadams/pen/dMqjGR-->
+ 
